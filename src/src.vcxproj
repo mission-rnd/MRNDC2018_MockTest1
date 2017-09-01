@@ -79,7 +79,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GreekGeeks.cpp" />
-    <ClCompile Include="killingDragons.cpp" />
+    <ClCompile Include="KillingDragons.cpp" />
     <ClCompile Include="MainTest.cpp" />
     <ClCompile Include="MeetingPoint.cpp" />
     <ClCompile Include="Snake.cpp" />

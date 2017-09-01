@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "../src/killingDragons.cpp"
+#include "../src/KillingDragons.cpp"
 
 using namespace System;
 using namespace System::Text;

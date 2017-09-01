@@ -24,13 +24,13 @@
     <ClCompile Include="GreekGeeks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="killingDragons.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MeetingPoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Snake.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KillingDragons.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
