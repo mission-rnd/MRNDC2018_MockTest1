@@ -47,6 +47,21 @@ namespace spec
 		[TestMethod, Timeout(1000)]
 		void TripletsSamples()
 		{
+			int Arr1[6] = {1, 2, 4, 6};
+			int len1 = 4;
+			long long res1 = findTriplets(Arr1,len1);
+			Assert::AreEqual(2LL, res1, L"Wrong Triplet Count", 1, 2);
+
+			int Arr2[6] = { 2, 1, 4, 3, 6 };
+			int len2 = 5;
+			long long res2 = findTriplets(Arr2, len2);
+			Assert::AreEqual(1LL, res2, L"Wrong Triplet Count", 1, 2);
+
+
+			int Arr3[4] = { 1, 1, 1, 1 };
+			int len3 = 4;
+			long long res3 = findTriplets(Arr3, len3);
+			Assert::AreEqual(4LL, res3, L"Wrong Triplet Count", 1, 2);
 		}
 
 	};

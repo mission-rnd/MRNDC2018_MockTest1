@@ -35,11 +35,24 @@ namespace spec
 
 #pragma endregion 
 
+		int compare(int** output, int** expectedOutput){
+			if (expectedOutput == NULL){
+				if (output == NULL)	return 1;
+				return 0;
+			}
+			for (int i = 0; i < 3; i++){
+				for (int j = 0; j < 100; j++){
+					if (output[i][j] != expectedOutput[i][j])	return 0;
+				}
+			}
+			return 1;
+		}
 
 		[TestMethod, Timeout(1000)]
 		void Sample_Snake()
 		{
-
+			int check = 0;
+			Assert::AreEqual(0, check, L"Sample test failed", 1, 2, 1, 2);
 		};
 
 		

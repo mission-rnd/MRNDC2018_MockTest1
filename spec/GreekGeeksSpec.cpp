@@ -40,6 +40,13 @@ namespace spec
 		[TestMethod, Timeout(1000)]
 		void GreekGeekTest01_samples()
 		{
+			long long result = 0;
+			result = countCommonStars(1, 3, 6, 10, 4);
+			Assert::AreEqual(0LL, result, L"Failed GreekGeeks Sample 1", 1, 2);
+			result = countCommonStars(3, 1, 10, 2, 10);
+			Assert::AreEqual(2LL, result, L"Failed GreekGeeks Sample 2", 1, 2);
+			result = countCommonStars(1, 5, 5, 6, 5);
+			Assert::AreEqual(0LL, result, L"Failed GreekGeeks Sample 2", 1, 2);
 		}
 
 	

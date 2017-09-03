@@ -38,6 +38,31 @@ namespace spec
 		[TestMethod, Timeout(500)]
 		void KillingDragonsSamples()
 		{
+
+			long dragonPower1[] = { 1, 5, 7 };
+			long energyPortion1[] = { 2, 6, 3 };
+
+			int res1 = canSavePrincess(dragonPower1, energyPortion1, sizeof(dragonPower1)/sizeof(dragonPower1[0]));
+
+			Assert::AreEqual(-1, res1, L"Simple Case 1 Failed for Killing Dragon", 1, 2, 1, 2);
+
+			long dragonPower2[] = { 5,10,12,4 };
+			long energyPortion2[] = { 20,2,1,15 };
+
+			int res2 = canSavePrincess(dragonPower2, energyPortion2, sizeof(dragonPower2) / sizeof(dragonPower2[0]));
+
+			Assert::AreEqual(4, res2, L"Simple Case 1 Failed for Killing Dragon", 1, 2, 1, 2);
+
+
+
+			long dragonPower3[] = { 7,10,6};
+			long energyPortion3[] = { 8, 9, 7 };
+
+			int res3 = canSavePrincess(dragonPower3, energyPortion3, sizeof(dragonPower3) / sizeof(dragonPower3[0]));
+
+			Assert::AreEqual(1, res3, L"Simple Case 1 Failed for Killing Dragon", 1, 2, 1, 2);
+
+
 		};
 		
 	};
